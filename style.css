@@ -7,8 +7,10 @@
 }
 
 body{
-    border: 1px solid red;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     background: #ECEEF1;
@@ -17,9 +19,13 @@ body{
 .container{
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav{
+    display: none;
     height: 100px;
     width: 100%;
     position: relative;
@@ -49,8 +55,8 @@ nav{
     display: none;
 }
 
-header{
-    width: 100%;
+header.logo{
+    width: 450px;
     height: 35px;
     display: flex;
     justify-content: center;
@@ -67,12 +73,63 @@ header{
 }
 
 a{
+    color: #0077C5;
+    font-weight: bold;
     text-decoration: none;
 }
 
+section{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 100%;
+    margin-top: 25px;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    width: 350px;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+li>img{
+    margin-right: 5px;
+}
+
+form{
+    margin-top: 20px;
+    width: 90%;
+    height: 700px;
+    background: #fff;
+}
 
 
 @media (min-width:748px){
+    nav{
+        display:block;
+    }
+
     .navBar.hidden{
         display: flex;
     }
