@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 1000px;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     background: #ECEEF1;
@@ -18,10 +18,14 @@ body{
 
 .container{
     height: 100%;
-    width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav{
+    display: none;
     height: 100px;
     width: 100%;
     position: relative;
@@ -52,7 +56,7 @@ nav{
 }
 
 header.logo{
-    width: 100%;
+    width: 450px;
     height: 35px;
     display: flex;
     justify-content: center;
@@ -69,6 +73,8 @@ header.logo{
 }
 
 a{
+    color: #0077C5;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -77,9 +83,9 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 450px;
     height: 100%;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 .links{
@@ -111,8 +117,19 @@ li>img{
     margin-right: 5px;
 }
 
+form{
+    margin-top: 20px;
+    width: 90%;
+    height: 700px;
+    background: #fff;
+}
+
 
 @media (min-width:748px){
+    nav{
+        display:block;
+    }
+
     .navBar.hidden{
         display: flex;
     }
