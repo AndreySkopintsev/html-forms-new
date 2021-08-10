@@ -70,3 +70,10 @@ a{
     text-decoration: none;
 }
 
+
+
+@media (min-width:748px){
+    .navBar.hidden{
+        display: flex;
+    }
+}
