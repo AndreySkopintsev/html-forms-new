@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,20 +10,63 @@ body{
     border: 1px solid red;
     height: 100vh;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: #ECEEF1;
 }
 
 .container{
     height: 100%;
     width: 100%;
-    position: relative;
 }
 
 nav{
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.navBar{
     position: absolute;
-    top: 0;
-    right: 0;
-    border: 1px solid blue;
+    top: 5px;
+    right: 30px;
     display: flex;
     justify-content: space-between;
     width: 300px;
+    font-size: 12px;
+    align-items: center;
 }
+
+.navBar > button{
+    width: 100px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #0077C5;
+    color: #fff;
+}
+
+.navBar.hidden{
+    display: none;
+}
+
+header{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.intuit-logo{
+    width: 118px;
+    height: 35px;
+    display: block;
+    background: url('/images/intuit.png');
+    background-position: 0 0;
+}
+
+a{
+    text-decoration: none;
+}
+
