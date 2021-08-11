@@ -135,6 +135,36 @@ li>img{
     font-size: 20px;
 }
 
+fieldset{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 25px;
+    border: none;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset>p{
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.form-input{
+    padding-left: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    border: 1px solid #c7c7c7;
+}
+
+input[type=email]:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
 
 @media (min-width:748px){
     nav{
